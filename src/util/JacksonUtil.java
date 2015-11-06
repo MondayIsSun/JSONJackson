@@ -34,7 +34,7 @@ public class JacksonUtil {
 		}
 	}
 
-	// 1、bean ——》 JSON
+	// 1、bean 2 JSON
 	public static String beanToJSON(Object obj) {
 		try {
 			return objectMapper.writeValueAsString(obj);
@@ -54,7 +54,7 @@ public class JacksonUtil {
 		return null;
 	}
 
-	// JSONStr to bean object
+	// JSONStr 2 bean object
 	public static Object jsonStr2Bean(String jsonStr) {
 		try {
 			// 需要无参的构造函数——》所以Bean对象尽量都提供无参的构造函数
